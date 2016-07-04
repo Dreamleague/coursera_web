@@ -1,24 +1,40 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-h1 {
-
+body {
+	font-family: Arial;
 }
 
-div{
+h1 { 
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.content {
 	border: 1px solid black;
 	background-color: grey;
-	margin-left: 5px;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
 }
-
 
 .title {
 	border: 1px solid black;
-	width: 100px;
-	height: 30px; 
+	padding: 10px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+p {
+	margin-top: 20px;
+	padding: 10px;
 }
 
 #title1 {
@@ -30,23 +46,40 @@ div{
 }
 
 #title3 {
-	background-color: yellow;
+	background-color: blue;
 }
 
 /***********Desktop View***********/
 
 @media (min-width: 992px) {
+	.container {
+		float: left;
+		width: 33%;
+	}
 
 }
 
 /***********Tablet View***********/
 
 @media (min-width: 768px) and (max-width: 991px){
+	.container {
+		float: left;
+	}
+	#container1, #container2 {
+		width: 50%;
+	}
+	#container3 {
+		width: 100%;
+	}
 
 }
 
 /***********Mobile View***********/
 
 @media (max-width: 767px) {
+	.container {
+		float: left;
+		width: 100%;
+	}
 
 }
