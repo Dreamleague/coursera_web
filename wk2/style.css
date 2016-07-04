@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+
+}
+
+div{
+	border: 1px solid black;
+	background-color: grey;
+	margin-left: 5px;
+}
+
+
+.title {
+	border: 1px solid black;
+	width: 100px;
+	height: 30px; 
+}
+
+#title1 {
+	background-color: red;
+}
+
+#title2 {
+	background-color: green;
+}
+
+#title3 {
+	background-color: yellow;
+}
+
+/***********Desktop View***********/
+
+@media (min-width: 992px) {
+
+}
+
+/***********Tablet View***********/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/***********Mobile View***********/
+
+@media (max-width: 767px) {
+
+}
